@@ -1,0 +1,119 @@
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.empty-cart h2 { font-size: 2.5rem; }
+.empty-cart p { opacity: 0.8; }
+.mt-4 { margin-top: 2rem; }
+
+.cart-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.cart-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.cart-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cart-details {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--surface-color);
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  width: fit-content;
+  border: 1px solid var(--border-color);
+}
+.qty-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+  display: flex;
+}
+
+.cart-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.item-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff4757;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+.remove-btn:hover { opacity: 1; }
+
+.cart-summary {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .cart-content { grid-template-columns: 1fr; }
+  .cart-item { flex-direction: column; text-align: center; }
+  .cart-actions { align-items: center; }
+}
