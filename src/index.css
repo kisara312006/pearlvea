@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
 :root {
-  /* Light Theme Variables */
-  --bg-color: #fafafa;
-  --text-color: #111111;
-  --primary-gold: #d4af37;
-  --secondary-gold: #c5a028;
-  --accent-color: #f7e6a1;
-  --surface-color: rgba(255, 255, 255, 0.75);
-  --border-color: rgba(0, 0, 0, 0.08);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
-  --header-bg: rgba(255, 255, 255, 0.85);
-}
-
-[data-theme='dark'] {
   /* Dark Theme Variables */
   --bg-color: #0a0a0a;
   --text-color: #f5f5f5;
@@ -24,6 +11,19 @@
   --border-color: rgba(212, 175, 55, 0.15);
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
   --header-bg: rgba(10, 10, 10, 0.85);
+}
+
+[data-theme='light'] {
+  /* Light Theme Variables */
+  --bg-color: #fafafa;
+  --text-color: #111111;
+  --primary-gold: #d4af37;
+  --secondary-gold: #c5a028;
+  --accent-color: #f7e6a1;
+  --surface-color: rgba(255, 255, 255, 0.75);
+  --border-color: rgba(0, 0, 0, 0.08);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05);
+  --header-bg: rgba(255, 255, 255, 0.85);
 }
 
 *, *::before, *::after {
@@ -95,7 +95,7 @@ body {
   background: linear-gradient(135deg, var(--primary-gold), var(--secondary-gold));
   color: #000; /* Gold usually pairs best with black for high contrast */
 }
-[data-theme='dark'] .btn-primary {
+[data-theme='light'] .btn-primary {
   color: #000;
 }
 
@@ -145,4 +145,20 @@ a {
 .page-wrapper {
   padding-top: 80px; /* Offset for fixed navbar */
   min-height: calc(100vh - 200px); /* Adjust for footer */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .input-field {
+    padding: 0.7rem 0.9rem;
+  }
 }

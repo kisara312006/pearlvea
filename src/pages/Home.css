@@ -32,7 +32,7 @@
   pointer-events: none;
 }
 
-[data-theme='dark'] .hero-section {
+[data-theme='light'] .hero-section {
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(212, 175, 55, 0.1) 100%);
 }
 
@@ -169,11 +169,50 @@
     font-size: 2.5rem;
   }
 
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .btn-large {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
   .about-content {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-text p {
+    font-size: 1rem;
+  }
+
+  .about-features {
+    gap: 1.5rem;
+  }
+
+  .feature {
+    padding: 1rem;
+  }
+
+  .feature:hover {
+    transform: none;
   }
 
   .products-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 2rem 1.5rem;
   }
 }
