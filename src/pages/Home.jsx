@@ -18,7 +18,7 @@ const Home = () => {
       <section className="hero-section">
         <div className="container hero-content animate-fade-in">
           <h1 className="hero-title">
-            hello in <span className="gold-text">Every Pearl</span>
+            Elegance in <span className="gold-text">Every Pearl</span>
           </h1>
           <p className="hero-subtitle">
             Discover our premium collection of handcrafted pearl bags and purses. Timeless beauty, modern sophistication.
